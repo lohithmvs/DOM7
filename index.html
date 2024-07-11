@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[4,5,1,3,2,7,8];
+        arr.forEach(function(val,index){
+            console.log(`value of arr ${val} and index is ${index}`);
+        })
+        let hi=arr.filter(function(val){
+            return val>5;
+        })
+        console.log(hi);
+        let hello=arr.map(function(val){
+            return val*10;
+        })
+        console.log(hello);
+        let accmulator=arr.reduce((acc,val)=>{
+            return acc+val;
+        },10)
+        console.log(accmulator);
+        let b=arr.sort((a,b)=>{
+            return b-a;
+        })
+        console.log(b);
+        let arr1=[1,6,2,5,1,2,2,7,5,6,"abc","f","ddd"];
+        let b1=arr1.sort((a,b)=>{
+            return a-b;
+        })
+        console.log(b1);
+        console.log(arr1.sort());
+        let num1=arr.some(function(val){
+            return val>4;
+        })
+        console.log(num1);
+        let num2=arr.every(function(val){
+            return val>4;
+        })
+        console.log(num2);
+        let aa1=105.2323;
+        console.log(aa1.toFixed(1));
+        console.log(parseInt(aa1));
+        console.log(parseFloat(aa1));
+        console.log(isNaN(aa1));
+        console.log(isNaN("hello"));
+        console.log(Math.max(10,2,54,123));
+        console.log(Math.min(2,424,0,44));
+        console.log(Math.round(213.5));
+        console.log(Math.floor(4.8));
+        console.log(Math.ceil(4.2));
+        console.log(parseInt(Math.random()*10));
+    </script>
+</body>
+</html>
